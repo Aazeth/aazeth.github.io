@@ -1,6 +1,99 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <h1>halo dunia</h1>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GDrive Link Converter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      background: #0f0f14;
+      color: #eaeaf0;
+      font-family: system-ui, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .box {
+      background: #181820;
+      padding: 24px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 420px;
+      box-shadow: 0 0 40px rgba(0,0,0,0.4);
+    }
+
+    h1 {
+      font-size: 18px;
+      margin-bottom: 16px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    input {
+      margin-bottom: 12px;
+      background: #232332;
+      color: #fff;
+    }
+
+    input::placeholder {
+      color: #aaa;
+    }
+
+    button {
+      background: #6c7cff;
+      color: #fff;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    button:hover {
+      background: #5b6bff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h1>Google Drive Link Converter</h1>
+
+    <input
+      id="linkInput"
+      type="text"
+      placeholder="paste direct download link here"
+    >
+
+    <button onclick="convert()">convert</button>
+  </div>
+
+  <script>
+    function convert() {
+      const input = document.getElementById("linkInput").value
+
+      const match = input.match(/id=([^&]+)/)
+      if (!match) {
+        alert("link ga valid")
+        return
+      }
+
+      const fileId = match[1]
+      const viewLink = `https://drive.google.com/file/d/${fileId}/view`
+
+      window.location.href = viewLink
+    }
+  </script>
+
+</body>
 </html>
