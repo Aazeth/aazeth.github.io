@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>GDrive Link Converter</title>
+  <title>Google Drive Link Converter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     body {
-      background: #0f0f14;
-      color: #eaeaf0;
-      font-family: system-ui, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
+  background: #0f0f14;
+  color: #eaeaf0;
+  font-family: system-ui, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 16px;
+  box-sizing: border-box;
     }
 
     .box {
@@ -72,10 +74,10 @@
     <input
       id="linkInput"
       type="text"
-      placeholder="paste direct download link here"
+      placeholder="Link..."
     >
 
-    <button onclick="convert()">convert</button>
+    <button onclick="convert()">CONVERT</button>
   </div>
 
   <script>
