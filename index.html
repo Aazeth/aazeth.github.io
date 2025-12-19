@@ -5,76 +5,15 @@
   <title>Google Drive Link Converter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-  background: #0f0f14;
-  color: #eaeaf0;
-  font-family: system-ui, sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-  padding: 16px;
-  box-sizing: border-box;
-    }
-
-    .box {
-      background: #181820;
-      padding: 24px;
-      border-radius: 12px;
-      width: 100%;
-      max-width: 420px;
-      box-shadow: 0 0 40px rgba(0,0,0,0.4);
-    }
-
-    h1 {
-      font-size: 18px;
-      margin-bottom: 16px;
-      text-align: center;
-      font-weight: 600;
-    }
-
-    input, button {
-      width: 100%;
-      padding: 12px;
-      border-radius: 8px;
-      border: none;
-      font-size: 14px;
-      box-sizing: border-box;
-    }
-
-    input {
-      margin-bottom: 12px;
-      background: #232332;
-      color: #fff;
-    }
-
-    input::placeholder {
-      color: #aaa;
-    }
-
-    input:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px #6c7cff;
-    }
-
-    button {
-      background: #6c7cff;
-      color: #fff;
-      cursor: pointer;
-      font-weight: 600;
-    }
-
-    button:hover {
-      background: #5b6bff;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="box">
-    <h1>input ur diwrect downlwoad lwink below :)<br/>magic happens. lwink become view mode (⁠≧⁠▽⁠≦⁠)</h1>
+    <h1>
+      input ur diwrect downlwoad lwink below :)<br>
+      magic happens. lwink become view mode (⁠≧⁠▽⁠≦⁠)
+    </h1>
 
     <input
       id="linkInput"
@@ -82,25 +21,14 @@
       placeholder="input ur lwink hewre pwease :3"
     >
 
-    <button onclick="convert()">CONVWERT!! (⁠つ⁠≧⁠▽⁠≦⁠)⁠つ</button>
+    <div class="row">
+      <button onclick="pasteLink()">paste fwom clipboawd</button>
+      <button onclick="clearLink()">cweaw</button>
+    </div>
+
+    <button class="convert" onclick="convert()">CONVWERT!! (⁠つ⁠≧⁠▽⁠≦⁠)⁠つ</button>
   </div>
 
-  <script>
-    function convert() {
-      const input = document.getElementById("linkInput").value
-
-      const match = input.match(/id=([^&]+)/)
-      if (!match) {
-        alert("lwinknyaa ga vawlid")
-        return
-      }
-
-      const fileId = match[1]
-      const viewLink = `https://drive.google.com/file/d/${fileId}/view`
-
-      window.location.href = viewLink
-    }
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
