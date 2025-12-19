@@ -79,3 +79,25 @@ input:focus {
 .convert:hover {
   background: #5b6bff;
 }
+
+.btn-paste {
+  background: #2f3b6f;
+  color: #dfe4ff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-paste:hover {
+  background: #3a4a8a;
+}
+
+.btn-clear {
+  background: #4a2b2b;
+  color: #ffdede;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-clear:hover {
+  background: #623636;
+}
