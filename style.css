@@ -60,13 +60,11 @@ input:focus {
 }
 
 .row button {
-  background: #2a2a3a;
   font-weight: 500;
   cursor: pointer;
 }
 
 .row button:hover {
-  background: #34344a;
 }
 
 .convert {
@@ -81,14 +79,14 @@ input:focus {
 }
 
 .btn-paste {
-  background: #2f3b6f;
+  background: #356f38;
   color: #dfe4ff;
   font-weight: 500;
   cursor: pointer;
 }
 
 .btn-paste:hover {
-  background: #3a4a8a;
+  background: #458a43;
 }
 
 .btn-clear {
