@@ -17,6 +17,14 @@ body {
   box-sizing: border-box;
 }
 
+* {
+  font-family: "uwuFont", system-ui, sans-serif !important;
+}
+
+::placeholder {
+  font-family: "uwuFont", system-ui, sans-serif;
+}
+
 .box {
   background: #181820;
   border: 1px solid #2a2a3a;
