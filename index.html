@@ -7,46 +7,58 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="/res/img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/res/img/favicon-16x16.png">
+  <link rel="manifest" href="/res/img/site.webmanifest">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="box">
-    <h1>GUGWLE DWIEVE LWINK CONVWERTEWR (>~<)</h1>
+  <!-- WRAPPER BIAR TURUN KE BAWAH -->
+  <div style="width:100%; display:flex; flex-direction:column; align-items:center;">
 
-    <input
-      id="linkInput"
-      type="text"
-      placeholder="i-input ur lwink hewre pwease :3"
-    >
+    <div class="box">
+      <h1>GUGWLE DWIEVE LWINK CONVWERTEWR (>~<)</h1>
 
-    <div class="row">
-      <div class="uwu-wrap">
+      <input
+        id="linkInput"
+        type="text"
+        placeholder="i-input ur lwink hewre pwease :3"
+      >
+
+      <div class="row">
         <button class="btn-uwu" onclick="toggleUwu()">clwick meee! (^~^)/</button>
-        <div id="uwuBox" class="uwu-box">
-          hewwoooo uwu<br><br>
-          dis lwittle site turns ur scary download lwink<br>
-          into a comfy view lwink ( ˘ ³˘)♥<br><br>
-          paste. convwert. be happy.<br>
-          no thoughts. head empty~
-        </div>
+        <button class="btn-clear" onclick="clearLink()">clweawr ¯\_(ツ)_/¯</button>
       </div>
 
-      <button class="btn-clear" onclick="clearAll()">clweawr ¯\_(ツ)_/¯</button>
+      <div id="uwuBox" class="uwu-box">
+        <p>
+          hewwoooo!!!<br>
+          dis lwittle website turns ur s-scawry downwload lwink<br>
+          into a comfy view lwink ( ˘ ³˘)♥<br><br>
+          paste lwink. clwick convwert. be happy.<br>
+          no thoughts. head empty~ :D
+        </p>
+      </div>
+
+      <button class="convert" onclick="convert()">CONVWERT!! (⁠つ⁠≧⁠▽⁠≦⁠)⁠つ</button>
     </div>
 
-    <button class="convert" onclick="convert()">CONVWERT!! (つ≧▽≦)つ</button>
-  </div>
+    <!-- BOX HASIL (DI BAWAH, BUKAN SAMPING) -->
+    <div id="resultBox" class="box result-box hidden">
+      <div class="result-title">✨ convwert successfuw uwu</div>
 
-  <div id="resultBox" class="box result hidden">
-    <h2>convwert successfuw :D</h2>
+      <input
+        id="resultOutput"
+        class="result-output"
+        type="text"
+        readonly
+      >
 
-    <textarea id="resultLink" readonly></textarea>
-
-    <div class="row">
-      <button class="btn-copy" onclick="copyLink()">copy lwink</button>
-      <button class="btn-open" onclick="openLink()">open lwink</button>
+      <div class="row">
+        <button class="btn-copy" onclick="copyLink()">copy lwink</button>
+        <button class="btn-open" onclick="openLink()">open lwink</button>
+      </div>
     </div>
+
   </div>
 
   <script src="script.js"></script>
