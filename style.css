@@ -3,9 +3,10 @@ body {
   color: #eaeaf0;
   font-family: system-ui, sans-serif;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   padding: 16px;
   box-sizing: border-box;
@@ -20,15 +21,29 @@ body {
   box-shadow: 0 0 40px rgba(0,0,0,0.4);
 }
 
+.result {
+  margin-top: 16px;
+  background: #161622;
+}
+
+.hidden {
+  display: none;
+}
+
 h1 {
   font-size: 16px;
-  margin-bottom: 16px;
   text-align: center;
-  font-weight: 600;
-  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 14px;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
 input,
+textarea,
 button {
   width: 100%;
   padding: 12px;
@@ -38,17 +53,16 @@ button {
   box-sizing: border-box;
 }
 
-input {
-  margin-bottom: 12px;
+input,
+textarea {
   background: #232332;
   color: #fff;
+  margin-bottom: 12px;
+  resize: none;
 }
 
-input::placeholder {
-  color: #aaa;
-}
-
-input:focus {
+input:focus,
+textarea:focus {
   outline: none;
   box-shadow: 0 0 0 2px #6c7cff;
 }
@@ -59,15 +73,7 @@ input:focus {
   margin-bottom: 12px;
 }
 
-.row button {
-  flex: 1;
-  height: 44px;
-  font-weight: 500;
-  cursor: pointer;
-}
-
 .convert {
-  height: 44px;
   background: #6c7cff;
   color: #fff;
   font-weight: 600;
@@ -84,27 +90,42 @@ input:focus {
 }
 
 .btn-clear:hover {
-  background: #e4546c;
+  background: #623636;
 }
 
 .btn-uwu {
-  background: #ff5bb5;
-  color: #f0e9ff;
+  background: #c869ff;
+  color: #e9ddff;
 }
 
 .btn-uwu:hover {
-  background: #ce4a92;
+  background: #34344a;
+}
+
+.btn-copy {
+  background: #5de0c0;
+  color: #103b33;
+}
+
+.btn-open {
+  background: #ffd36c;
+  color: #4a3b10;
+}
+
+.uwu-wrap {
+  position: relative;
+  flex: 1;
 }
 
 .uwu-box {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
   width: 100%;
   background: #1f1f2e;
   border-radius: 8px;
   padding: 12px;
   font-size: 13px;
-  color: #cfcfff;
-  line-height: 1.4;
-  margin: 12px 0;
   display: none;
-  box-sizing: border-box;
+  z-index: 10;
 }
