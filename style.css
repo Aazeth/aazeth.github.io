@@ -85,7 +85,7 @@ input:focus {
 }
 
 .btn-clear {
-  background: #ff637d;
+  background: #c54d43;
   color: #ffdede;
 }
 
@@ -94,7 +94,7 @@ input:focus {
 }
 
 .btn-uwu {
-  background: #ff5bb5;
+  background: #d4597e;
   color: #f0e9ff;
 }
 
@@ -147,21 +147,21 @@ input:focus {
 
 /* tombol hasil */
 .btn-copy {
-  background: #5de0c0;
-  color: #103b33;
+  background: #626291;
+  color: #b9b9ff;
 }
 
 .btn-copy:hover {
-  background: #45b9a1;
+  background: #2a2a3a;
 }
 
 .btn-open {
-  background: #ffd36c;
-  color: #4a3b10;
+  background: #626291;
+  color: #b9b9ff;
 }
 
 .btn-open:hover {
-  background: #e6bc5f;
+  background: #2a2a3a;
 }
 
 /* hidden state */
