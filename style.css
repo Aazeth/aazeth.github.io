@@ -49,6 +49,7 @@ button {
 input {
   margin-bottom: 12px;
   background: #232332;
+  border: 1px solid #454560;
   color: #fff;
   height: 44px;
 }
@@ -109,7 +110,7 @@ input:focus {
   width: 100%;
   background: #1f1f2e;
   border-radius: 8px;
-  padding: 12px;
+  padding: 5px;
   font-size: 13px;
   color: #cfcfff;
   line-height: 1.4;
@@ -144,7 +145,7 @@ input:focus {
   color: #fff;
   border-radius: 8px;
   padding: 12px;
-  border: none;
+  border: 1px solid #454560;
   font-size: 14px;
   box-sizing: border-box;
 }
