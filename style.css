@@ -110,10 +110,10 @@ input:focus {
   width: 100%;
   background: #1f1f2e;
   border-radius: 8px;
-  padding: 5px;
+  padding: 12px;
   font-size: 13px;
   color: #cfcfff;
-  line-height: 1.4;
+  line-height: 1;
   margin: 12px 0;
   display: none;
   box-sizing: border-box;
