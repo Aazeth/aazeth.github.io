@@ -88,12 +88,12 @@ input:focus {
 }
 
 .btn-uwu {
-  background: #c869ff;
+  background: #ff5bb5;
   color: #f0e9ff;
 }
 
 .btn-uwu:hover {
-  background: #b05ce6;
+  background: #ce4a92;
 }
 
 .uwu-box {
@@ -104,6 +104,7 @@ input:focus {
   font-size: 13px;
   color: #cfcfff;
   line-height: 1.4;
-  margin-bottom: 12px;
+  margin: 12px 0;
   display: none;
+  box-sizing: border-box;
 }
