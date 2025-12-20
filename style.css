@@ -5,7 +5,7 @@
   font-style: normal;
 }
 body {
-  background: #050505;
+  background: #030303;
   color: #eaeaf0;
   font-family: "UwuFont", system-ui, sans-serif;
   display: flex;
@@ -19,6 +19,8 @@ body {
 
 .box {
   background: #181820;
+  border: 1px solid #2a2a3a;
+  box-shadow: 0 0 0 1px rgba(108,124,255,0.15);
   padding: 16px;
   border-radius: 12px;
   width: 100%;
@@ -90,7 +92,7 @@ input:focus {
 }
 
 .btn-clear:hover {
-  background: #e4546c;
+  background: #2a2a3a;
 }
 
 .btn-uwu {
@@ -99,7 +101,7 @@ input:focus {
 }
 
 .btn-uwu:hover {
-  background: #ce4a92;
+  background: #2a2a3a;
 }
 
 .uwu-box {
@@ -121,6 +123,8 @@ input:focus {
 .result-box {
   margin-top: 10px;
   background: #161622;
+  border: 1px solid #2a2a3a;
+  box-shadow: 0 0 0 1px rgba(108,124,255,0.15);
 }
 
 /* judul hasil */
