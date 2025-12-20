@@ -1,37 +1,33 @@
-function toggleUwu() {
-  const box = document.getElementById("uwuBox")
-  box.style.display = box.style.display === "block" ? "none" : "block"
-}
-
-function clearAll() {
-  document.getElementById("linkInput").value = ""
-  document.getElementById("resultBox").classList.add("hidden")
-  document.getElementById("uwuBox").style.display = "none"
-}
-
 function convert() {
-  const input = document.getElementById("linkInput").value
-  const match = input.match(/id=([^&]+)/)
+  const input = document.getElementById("linkInput").value.trim()
 
+  if (!input) {
+    alert("pwease put a lwink fiwst")
+    return
+  }
+
+  const match = input.match(/id=([^&]+)/)
   if (!match) {
-    alert("lwink invalid uwu")
+    alert("dis link is not vawlid")
     return
   }
 
   const fileId = match[1]
   const viewLink = `https://drive.google.com/file/d/${fileId}/view`
 
-  document.getElementById("resultLink").value = viewLink
+  // isi hasil ke box
+  document.getElementById("resultOutput").value = viewLink
+
+  // tampilin box hasil
   document.getElementById("resultBox").classList.remove("hidden")
 }
 
-function copyLink() {
-  const text = document.getElementById("resultLink")
-  text.select()
-  document.execCommand("copy")
+function clearLink() {
+  document.getElementById("linkInput").value = ""
+  document.getElementById("resultBox").classList.add("hidden")
 }
 
-function openLink() {
-  const link = document.getElementById("resultLink").value
-  window.open(link, "_blank")
+function toggleUwu() {
+  const box = document.getElementById("uwuBox")
+  box.style.display = box.style.display === "block" ? "none" : "block"
 }
