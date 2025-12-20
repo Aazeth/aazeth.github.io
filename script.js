@@ -41,3 +41,7 @@ function pasteLink() {
 function clearLink() {
   document.getElementById("linkInput").value = ""
 }
+function toggleUwu() {
+  const box = document.getElementById("uwuBox")
+  box.style.display = box.style.display === "block" ? "none" : "block"
+}
