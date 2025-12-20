@@ -60,14 +60,14 @@ input:focus {
 }
 
 .row button {
+  flex: 1;
+  height: 44px;
   font-weight: 500;
   cursor: pointer;
 }
 
-.row button:hover {
-}
-
 .convert {
+  height: 44px;
   background: #6c7cff;
   color: #fff;
   font-weight: 600;
@@ -81,38 +81,22 @@ input:focus {
 .btn-clear {
   background: #ff637d;
   color: #ffdede;
-  font-weight: 500;
-  cursor: pointer;
 }
 
 .btn-clear:hover {
-  background: #623636;
+  background: #e4546c;
 }
 
 .btn-uwu {
   background: #c869ff;
-  color: #d8d8ff;
-  font-weight: 500;
-  cursor: pointer;
+  color: #f0e9ff;
 }
 
 .btn-uwu:hover {
-  background: #34344a;
-}
-
-.uwu-wrap {
-  position: relative;
-  flex: 1;
-}
-
-.uwu-wrap button {
-  width: 100%;
+  background: #b05ce6;
 }
 
 .uwu-box {
-  position: absolute;
-  top: calc(100% + 8px);
-  left: 0;
   width: 100%;
   background: #1f1f2e;
   border-radius: 8px;
@@ -120,6 +104,6 @@ input:focus {
   font-size: 13px;
   color: #cfcfff;
   line-height: 1.4;
+  margin-bottom: 12px;
   display: none;
-  z-index: 10;
 }
