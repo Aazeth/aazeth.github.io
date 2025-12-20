@@ -79,7 +79,7 @@ input:focus {
 }
 
 .btn-clear {
-  background: #6f3833;
+  background: #ff637d;
   color: #ffdede;
   font-weight: 500;
   cursor: pointer;
@@ -88,13 +88,9 @@ input:focus {
 .btn-clear:hover {
   background: #623636;
 }
-.uwu-container {
-  margin-bottom: 12px;
-  position: relative;
-}
 
 .btn-uwu {
-  background: #2a2a3a;
+  background: #c869ff;
   color: #d8d8ff;
   font-weight: 500;
   cursor: pointer;
@@ -104,13 +100,26 @@ input:focus {
   background: #34344a;
 }
 
+.uwu-wrap {
+  position: relative;
+  flex: 1;
+}
+
+.uwu-wrap button {
+  width: 100%;
+}
+
 .uwu-box {
-  display: none;
-  margin-top: 8px;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  width: 100%;
   background: #1f1f2e;
   border-radius: 8px;
   padding: 12px;
   font-size: 13px;
   color: #cfcfff;
   line-height: 1.4;
+  display: none;
+  z-index: 10;
 }
