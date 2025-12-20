@@ -5,17 +5,14 @@
   <title>Google Drive Link Converter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  	<link rel="icon" type="image/png" sizes="32x32" href="/res/img/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/res/img/favicon-16x16.png">
-	<link rel="manifest" href="/res/img/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="/res/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/res/img/favicon-16x16.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <div class="box">
-    <h1>
-      GUGWLE DWIEVE LWINK CONVWERTEWR (>~<)
-    </h1>
+    <h1>GUGWLE DWIEVE LWINK CONVWERTEWR (>~<)</h1>
 
     <input
       id="linkInput"
@@ -23,22 +20,33 @@
       placeholder="i-input ur lwink hewre pwease :3"
     >
 
-<div class="row">
-  <button class="btn-uwu" onclick="toggleUwu()">clwick meee! (^~^)/</button>
-  <button class="btn-clear" onclick="clearLink()">clweawr ¯⁠\⁠_⁠(⁠ツ⁠)⁠_⁠/⁠¯</button>
-</div>
+    <div class="row">
+      <div class="uwu-wrap">
+        <button class="btn-uwu" onclick="toggleUwu()">clwick meee! (^~^)/</button>
+        <div id="uwuBox" class="uwu-box">
+          hewwoooo uwu<br><br>
+          dis lwittle site turns ur scary download lwink<br>
+          into a comfy view lwink ( ˘ ³˘)♥<br><br>
+          paste. convwert. be happy.<br>
+          no thoughts. head empty~
+        </div>
+      </div>
 
-<div id="uwuBox" class="uwu-box">
-  <p>
-    hewwoooo!!!<br>
-    dis lwittle website turns ur s-scawry downwload lwink<br>
-    into a comfy view lwink ( ˘ ³˘)♥<br><br>
-    paste lwink. clwick convwert. be happy.<br>
-    no thoughts. head empty~ :D
-  </p>
-</div>
+      <button class="btn-clear" onclick="clearAll()">clweawr ¯\_(ツ)_/¯</button>
+    </div>
 
-<button class="convert" onclick="convert()">CONVWERT!! (⁠つ⁠≧⁠▽⁠≦⁠)⁠つ</button>
+    <button class="convert" onclick="convert()">CONVWERT!! (つ≧▽≦)つ</button>
+  </div>
+
+  <div id="resultBox" class="box result hidden">
+    <h2>convwert successfuw :D</h2>
+
+    <textarea id="resultLink" readonly></textarea>
+
+    <div class="row">
+      <button class="btn-copy" onclick="copyLink()">copy lwink</button>
+      <button class="btn-open" onclick="openLink()">open lwink</button>
+    </div>
   </div>
 
   <script src="script.js"></script>
