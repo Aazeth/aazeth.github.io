@@ -78,17 +78,6 @@ input:focus {
   background: #5b6bff;
 }
 
-.btn-paste {
-  background: #356f38;
-  color: #dfe4ff;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.btn-paste:hover {
-  background: #458a43;
-}
-
 .btn-clear {
   background: #6f3833;
   color: #ffdede;
@@ -98,4 +87,30 @@ input:focus {
 
 .btn-clear:hover {
   background: #623636;
+}
+.uwu-container {
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.btn-uwu {
+  background: #2a2a3a;
+  color: #d8d8ff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-uwu:hover {
+  background: #34344a;
+}
+
+.uwu-box {
+  display: none;
+  margin-top: 8px;
+  background: #1f1f2e;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 13px;
+  color: #cfcfff;
+  line-height: 1.4;
 }
